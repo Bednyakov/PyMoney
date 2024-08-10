@@ -24,10 +24,6 @@ python -m venv .venv
 .venv\Scripts\activate
 ```
 
-Активировать окружение в Linux
-```
-source .venv\bin\activate
-```
 Установить зависимости:
 ```
 pip install -r requirements.txt
@@ -37,10 +33,6 @@ pip install -r requirements.txt
 ### Windows
 ```
 python run.py
-```
-### Linux:
-```
-python3 run.py
 ```
 _________
 [Задать вопрос](https://t.me/itpolice)
