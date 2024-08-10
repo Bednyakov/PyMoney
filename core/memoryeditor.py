@@ -61,7 +61,6 @@ class MemoryEditor:
         for address in addresses:
             self.pm.write_bytes(address, replace_bytes, 4)
             print(f"Замена значения по адресу: {hex(address)} на {new_value}")
-            exit()
     
     def is_memory_readable(self, address) -> bool:
         mbi = pymem.memory.virtual_query(self.pm.process_handle, address)

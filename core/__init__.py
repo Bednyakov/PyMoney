@@ -42,6 +42,7 @@ def main():
 
                 if action == 1:
                     print("Изменяем значения...")
+                    action = 0
                     editor.replace_value(found_addresses, replace_value)
                 if action == 2:
                     next_value = int(input('Измените значение в игре и введите новое: '))
