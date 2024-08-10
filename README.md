@@ -3,6 +3,8 @@ Program for replacing values ​​in process memory.
 
 Программа для поиска и замены значений в памяти процесса (ArtMoney на минималках).
 
+### Для начала работы установите зависимости из requirements.txt и запустите run.py
+
 ## Установка | Installation
 Клонировать репозиторий:
 ```
