@@ -29,9 +29,11 @@ def main():
 
             if len(found_addresses) == 1:
                 editor.replace_value(found_addresses, replace_value)
+                print(f"Значение изменено.")
+                exit()
 
             else:
-                print(f"Найдено {len(found_addresses)} адресов со значением {search_value}.")
+                print(f"Найдено {len(found_addresses)} адресов с искомым значением.")
                 print("""
 Ввеедите:
     1 - Чтобы изменить значение во всех ячейках.
@@ -42,13 +44,13 @@ def main():
 
                 if action == 1:
                     print("Изменяем значения...")
-                    action = 0
                     editor.replace_value(found_addresses, replace_value)
+                    action = 0
                 if action == 2:
                     next_value = int(input('Измените значение в игре и введите новое: '))
                     found_addresses = editor.search_next_value(found_addresses, next_value)
                 if action == 0:
                     print("Программа завершила работу.")
-                    break
+                    exit()
     else:
         print("Значение не найдено в памяти процесса.")
