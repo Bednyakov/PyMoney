@@ -4,14 +4,11 @@ from .memoryeditor import MemoryEditor
 def main():
 
     try:
-        # Имя процесса игры (например, notepad.exe для тестирования)
         process_name = str(input("\nВведите имя процесса (например TQ.exe): "))
         
-        # Значение, которое нужно найти
-        search_value = int(input('\nВведите искомое целочисленное значение: '))  # Например, количество здоровья
+        search_value = int(input('\nВведите искомое целочисленное значение: '))
         
-        # Значение, на которое нужно заменить найденное
-        replace_value = int(input('\nНовое значение: '))  # Новое значение здоровья
+        replace_value = int(input('\nНовое значение: '))
 
     except Exception as e:
         print('\nYOU DIED\n')
