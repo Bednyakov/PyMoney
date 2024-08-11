@@ -35,5 +35,5 @@ pip install -r requirements.txt
 python run.py
 ```
 _________
-[Задать вопрос](https://t.me/itpolice)
+(По)Друг, подпишись на [телеграм-канал](https://t.me/itpolice) и поставь тут звезду, если понравилось. Заранее благодарю.
 
