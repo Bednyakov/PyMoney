@@ -1,7 +1,8 @@
+import threading
 import tkinter as tk
 from tkinter import ttk, messagebox
-from .processes_getter import get_process_names
 from .memoryeditor import MemoryEditor
+from .processes_getter import get_process_names
 
 class MenuEditor:
     def __init__(self, root):
