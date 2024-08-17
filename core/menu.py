@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
-from .processes_getter import get_process_names
-from .memoryeditor import MemoryEditor
+from processes_getter import get_process_names
+from memoryeditor import MemoryEditor
 
 class MenuEditor:
     def __init__(self, root):
@@ -88,3 +88,11 @@ class MenuEditor:
 
         messagebox.showinfo("Успех", "Значение было изменено.")
         self.create_main_menu()
+
+
+
+if __name__ == "__main__":
+    root = tk.Tk()
+
+    app = MenuEditor(root)
+    root.mainloop()
