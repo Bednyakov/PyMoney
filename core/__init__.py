@@ -8,7 +8,7 @@ class MenuEditor:
     def __init__(self, root):
         self.root = root
         self.editor = None
-        self.root.title("Memory Editor")
+        self.root.title("PyMoney by Tema Bednyakov")
         self.create_main_menu()
 
     def create_main_menu(self):
