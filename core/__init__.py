@@ -43,8 +43,26 @@ class MenuEditor:
         if not process_name or not current_value:
             messagebox.showerror("Ошибка", "Пожалуйста, заполните все поля.")
             return
+        
+        # Создаем новое окно загрузки
+        self.loading_window = tk.Toplevel(self.root)
+        self.loading_window.title("Загрузка")
+        tk.Label(self.loading_window, text="Идёт сканирование памяти, пожалуйста, подождите...").pack(padx=20, pady=20)
 
+        # Запускаем поиск в новом потоке
+        threading.Thread(target=self.perform_search, args=(int(current_value),)).start()
+
+    def perform_search(self, current_value):
         self.search_results = self.editor.search_value(int(current_value))  # поиск значения в памяти
+
+        if len(self.search_results) > 1:
+            self.show_filter_window()
+        else:
+            messagebox.showinfo("Результат", "Значение найдено и изменено.")
+            self.create_main_menu()
+
+        # Закрываем окно загрузки после завершения поиска
+        self.loading_window.destroy()
 
         if len(self.search_results) > 1:
             self.show_filter_window()
