@@ -34,6 +34,8 @@ pip install -r requirements.txt
 ```
 python run.py
 ```
+
+![Пример работы программы](https://github.com/Bednyakov/PyMoney/blob/main/images/pymoney.jpg)
 _________
 (По)Друг, подпишись на [телеграм-канал](https://t.me/itpolice) и поставь тут звезду, если понравилось. Заранее благодарю.
 
